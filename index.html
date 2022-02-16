@@ -5,42 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Calculator</title>
-    <link rel="stylesheet" href="styles/">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <section>
+    <section >
        <h1> Money Calculator </h1>
-     <div>
-         <img src="images/calculator.jpg" alt="">
-     </div>
-
-
-     <div>
-
-        <h3> Income </h3>
-       
-            <label for="fname">Income:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-
-            <h3> Expenses </h3>
-
-            <label for="lname">Food:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <label for="lname">Rent:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <label for="lname">Clothes:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Submit">
-
-            <h3> Total Expenses: 5500 </h3>
-            <h3> Balance: 4500 </h3>
-
-            <label for="lname">Food:</label>
-            <input type="text" id="lname" name="lname"> % 
-            <button>Save</button>
-            <h3>Saving Amount: 2000 </h3>
-          <h3>Remaining Balance: 2500 </h3>
-
+     <div class="grid">
+        <div class="im" >
+            <img width="auto" src="images/calculator.jpg" alt="">
+        </div>
+   
+        <div class="form" >
+           <h3> Income </h3>
+   
+               <label for="fname">Income:</label>
+               <input type="number" id="fname" name="fname"><br><br>
+   
+               <h3> Expenses </h3>
+   
+               <label for="lname">Food:</label>
+               <input type="number" id="lname" name="lname"><br><br>
+               <label for="lname">Rent:</label>
+               <input type="number" id="lname" name="lname"><br><br>
+               <label for="lname">Clothes:</label>
+               <input type="number" id="lname" name="lname"><br><br>
+               <button class="btn">Calculate</button>
+   
+               <h3> Total Expenses: 5500 </h3>
+               <h3> Balance: 4500 </h3>
+   
+               <label for="lname">Save:</label>
+               <input type="number" id="lname" name="lname"> % 
+               <button class="btn">Save</button>
+               <h3>Saving Amount: 2000 </h3>
+             <h3>Remaining Balance: 2500 </h3>
+   
+        </div>
      </div>
 
     </section>
