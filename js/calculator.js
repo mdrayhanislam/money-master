@@ -26,7 +26,6 @@
     else{
         const message =document.getElementById('mgs');
         message.style.display= "block";
-    
     }
     
     //Income Balance
@@ -46,11 +45,7 @@
         const message =document.getElementById('mgs');
         message.style.display= "block";
     }
-    //2nd condition
-    if(incomeAmount>totalExpenses){
-     
-    }
-  
+   
 //Saving Amount
     document.getElementById('save-btn').addEventListener
 ('click',function(){
@@ -70,6 +65,7 @@
     const remainingTotal= parseFloat (incomeAmount) - parseFloat (savingAmount);
     const remainingBalance = document.getElementById('rb');
     remainingBalance.innerText = remainingTotal;
+    
 });
 
 });
