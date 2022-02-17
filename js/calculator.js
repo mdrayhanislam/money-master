@@ -4,7 +4,7 @@
     // get amount deposited
     //food
     const foodInput= document.getElementById('Food-input');
-    const foodAmount = foodInput.value ;
+        const foodAmount = foodInput.value ;
     foodInput.value='';
    //Rent
    const  rentInput= document.getElementById('Rent-input');
@@ -16,9 +16,19 @@
     clothesInput.value='';
     //total expenses
     const totalExpenses = parseFloat (foodAmount) + parseFloat (rentAmount) + parseFloat (clothesAmount) ;
+
     //Expenses
     const expensesTotal = document.getElementById('total-expenses');
-    expensesTotal.innerText= totalExpenses;
+    //condition
+    if(foodAmount>0 && rentAmount>0 && clothesAmount>0  ){
+        expensesTotal.innerText= totalExpenses;
+    }
+    else{
+        const message =document.getElementById('mgs');
+        message.style.display= "block";
+    
+    }
+    
     //Income Balance
     const incomeInput= document.getElementById('Income-input');
     const incomeAmount = incomeInput.value ;
@@ -26,9 +36,21 @@
    //Main balance
     const totalBalance = parseFloat (incomeAmount )- parseFloat  (totalExpenses) ;
     const totalIcome = document.getElementById('balance');
-    totalIcome.innerText = totalBalance ;
 
-
+    //condition
+    if(foodAmount>0 && rentAmount>0 && clothesAmount>0  ){
+        
+        totalIcome.innerText = totalBalance ;
+    }
+    else{
+        const message =document.getElementById('mgs');
+        message.style.display= "block";
+    }
+    //2nd condition
+    if(incomeAmount>totalExpenses){
+     
+    }
+  
 //Saving Amount
     document.getElementById('save-btn').addEventListener
 ('click',function(){

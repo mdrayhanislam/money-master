@@ -45,5 +45,11 @@ h1 {
         /* font-size: 20px; */
         border-radius: 20px;
        }
+  }
 
+  #mgs {
+      background-color: #0000FF;
+      color: white;
+      padding: 10px;
+      display: none;
   }
