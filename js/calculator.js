@@ -56,12 +56,12 @@
    const inputSave = parseFloat(saveAmount);
    //Saving calculation
    const money = parseFloat (incomeAmount);
-   const savingAmount = (  money * inputSave)/ 100;
+  
+    const savingAmount = (  money * inputSave)/ 100;
 
 //    const totalsaving =
    const savingTotal = document.getElementById('save-amount');
     savingTotal.innerText= savingAmount;
-
     const remainingTotal= parseFloat (incomeAmount) - parseFloat (savingAmount);
     const remainingBalance = document.getElementById('rb');
     remainingBalance.innerText = remainingTotal;
