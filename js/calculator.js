@@ -1,5 +1,5 @@
 //handle calculator button event
-document.getElementById('calculator-button').addEventListener
+ document.getElementById('calculator-button').addEventListener
 ('click', function(){
     // get amount deposited
     //food
@@ -15,9 +15,42 @@ document.getElementById('calculator-button').addEventListener
     const clothesAmount = clothesInput.value ;
     clothesInput.value='';
     //total expenses
-    const totalexpenses = parseFloat (foodAmount) + parseFloat (rentAmount) + parseFloat (clothesAmount) ;
+    const totalExpenses = parseFloat (foodAmount) + parseFloat (rentAmount) + parseFloat (clothesAmount) ;
     //Expenses
     const expensesTotal = document.getElementById('total-expenses');
-    expensesTotal.innerText= totalexpenses;
-   
-})
+    expensesTotal.innerText= totalExpenses;
+    //Income Balance
+    const incomeInput= document.getElementById('Income-input');
+    const incomeAmount = incomeInput.value ;
+    incomeInput.value='';
+   //Main balance
+    const totalBalance = parseFloat (incomeAmount )- parseFloat  (totalExpenses) ;
+    const totalIcome = document.getElementById('balance');
+    totalIcome.innerText = totalBalance ;
+
+
+//Saving Amount
+    document.getElementById('save-btn').addEventListener
+('click',function(){
+    
+   const saveInputs = document.getElementById('save-input');
+   const saveAmount = saveInputs.value ;
+   saveInputs.value='';
+   const inputSave = parseFloat(saveAmount);
+   //Saving calculation
+   const money = parseFloat (incomeAmount);
+   const savingAmount = (  money * inputSave)/ 100;
+
+//    const totalsaving =
+   const savingTotal = document.getElementById('save-amount');
+    savingTotal.innerText= savingAmount;
+
+    const remainingTotal= parseFloat (incomeAmount) - parseFloat (savingAmount);
+    const remainingBalance = document.getElementById('rb');
+    remainingBalance.innerText = remainingTotal;
+});
+
+});
+ 
+
+
